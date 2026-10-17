@@ -1,0 +1,39 @@
+{
+  "targets": [
+    {
+      "name": "cloud",
+      "rdp": {
+        "host": "cloudpc-rdp.bitbrowser.net",
+        "port": 40024,
+        "username": "admin",
+        "password": "",
+        "domain": "",
+        "width": 1280,
+        "height": 800
+      },
+      "channel_name": "rdpdt",
+      "listen_host": "127.0.0.1",
+      "remote_host": "127.0.0.1",
+      "forwards": [
+        { "local_port": 9222, "remote_port": 9222 },
+        { "local_port": 49885, "remote_port": 49885 }
+      ]
+    },
+    {
+      "name": "lan",
+      "rdp": {
+        "host": "192.168.0.39",
+        "port": 3389,
+        "username": "bit",
+        "password": "",
+        "domain": "",
+        "width": 1280,
+        "height": 800
+      },
+      "channel_name": "rdpdt",
+      "forwards": [
+        { "local_port": 54283, "remote_port": 54283 }
+      ]
+    }
+  ]
+}
